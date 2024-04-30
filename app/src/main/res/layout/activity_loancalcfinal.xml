@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Loancalcfinal">
+
+
+    <ScrollView
+        android:layout_above="@id/mybanner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ScrollViewCount">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="50sp"
+                android:layout_marginBottom="100sp"
+                android:background="@drawable/rounded_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rectangleAdContainer"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/border_add"
+                    android:padding="2dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_emi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <EditText
+                            android:id="@+id/emi"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:layout_height="wrap_content"
+                            android:maxEms="0"
+                            android:inputType="number"
+                            android:hint="@string/hint_emi"
+                            android:importantForAutofill="no" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_total_Interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/interest_total"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:inputType="number"
+                            android:hint="@string/hint_interest_total"
+                            android:autofillHints="12456"
+                            tools:targetApi="o" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/mybanner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:background="@drawable/border_add"
+        />
+
+</RelativeLayout>

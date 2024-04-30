@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#4a4069"
+    tools:context=".mortgagecalc">
+
+
+
+    <com.facebook.ads.NativeAdLayout
+        android:id="@+id/nativebanner"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_add"
+        android:padding="2dp" />
+
+    <ScrollView
+        android:layout_below="@id/nativebanner"
+        android:layout_above="@id/mybanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewPurchasePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/row_margin_bottom"
+                android:textColor="#fff"
+                android:padding="@dimen/textview_padding"
+                android:hint="@string/enter_purchase_price"/>
+
+
+            <EditText
+                android:id="@+id/editTextPurchasePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:digits="0123456789"
+                android:fontFamily="sans-serif-smallcaps"
+                android:ems="10"
+                android:textColor="#fff"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:importantForAutofill="no"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/textViewDownPaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="#fff"
+                android:layout_marginBottom="@dimen/row_margin_bottom"
+                android:hint="@string/enter_down_payment_amount"
+                android:padding="@dimen/textview_padding" />
+            <EditText
+                android:id="@+id/editTextDownPaymentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="fill_horizontal"
+                android:digits="0123456789"
+                android:ems="10"
+                android:textColor="#fff"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:autofillHints="123456"
+                tools:targetApi="o"
+                tools:ignore="LabelFor" />
+
+
+
+            <TextView
+                android:id="@+id/textViewInterestRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="#fff"
+                android:layout_marginBottom="@dimen/row_margin_bottom"
+                android:padding="@dimen/textview_padding"
+                android:hint="@string/enter_interest_rate"
+                />
+            <EditText
+                android:id="@+id/editTextInterestRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:digits="0123456789"
+                android:ems="10"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-smallcaps"
+                android:inputType="number"
+                android:maxLength="5"
+                android:autofillHints=""
+                tools:ignore="LabelFor,UnusedAttribute" />
+
+
+            <TextView
+                android:id="@+id/duration"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration_year"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:id="@+id/textViewDuration"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:max="30"
+                android:progress="1" />
+
+            <Button android:id="@+id/calculate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/mybanner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:background="@drawable/border_add"
+        />
+
+
+
+</RelativeLayout>
+
+

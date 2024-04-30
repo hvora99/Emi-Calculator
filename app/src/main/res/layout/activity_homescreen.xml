@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4069"
+    tools:context=".homescreen">
+
+
+    <com.facebook.ads.NativeAdLayout
+        android:id="@+id/nativebanner"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_add"
+        android:padding="2dp" />
+
+    <ScrollView
+        android:layout_below="@id/nativebanner"
+        android:layout_above="@id/mybanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/layer2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/start"
+                    android:layout_marginTop="40sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginLeft="15sp"
+                    app:cardBackgroundColor="#54517b"
+                    android:layout_marginBottom="40sp"
+                    android:background="#4a90e2"
+                    app:contentPadding="5sp"
+                    app:cardElevation="4sp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_height="90sp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:background="@drawable/meter"
+                            android:layout_width="60sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:layout_height="60sp"
+                            android:layout_marginStart="20sp"
+                            android:contentDescription="@string/todo"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="#fff"
+                            android:text="@string/generate_credit_score"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dancer"
+                    android:src="@drawable/source"
+                    android:contentDescription="@string/todo" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/about"
+                    android:layout_marginTop="40sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginBottom="40sp"
+                    app:cardBackgroundColor="#54517b"
+                    app:contentPadding="5sp"
+                    app:cardElevation="4sp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_height="90sp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="#fff"
+                            android:text="@string/about_us"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/mybanner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:background="@drawable/border_add"
+        />
+
+
+</RelativeLayout>

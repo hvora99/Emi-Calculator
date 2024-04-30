@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4069"
+    tools:context=".loncalc">
+
+
+    <com.facebook.ads.NativeAdLayout
+        android:id="@+id/nativebanner"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_add"
+        android:padding="2dp" />
+
+
+    <ScrollView
+        android:layout_below="@id/nativebanner"
+        android:layout_above="@id/mybanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:hint="@string/hint_principal"
+                    android:importantForAutofill="no" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:inputType="number"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:digits="0123456789."
+                    android:hint="@string/hint_interest"
+                    android:importantForAutofill="no" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_tenure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/years"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789."
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="@string/hint_years"
+                    android:inputType="number"
+                    android:textColor="#fff"
+                    android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button android:id="@+id/btn_calculate2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_emi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <EditText
+                    android:id="@+id/emi"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxEms="0"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:inputType="number"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_total_Interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/interest_total"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/mybanner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:background="@drawable/border_add"
+        />
+
+
+</RelativeLayout>

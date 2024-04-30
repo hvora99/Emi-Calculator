@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4069"
+    tools:context=".creditdetail">
+
+
+    <ScrollView
+        android:layout_above="@id/mybanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rectangleAdContainer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/border_add"
+                android:padding="2dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/tvTitleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:padding="10sp"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDescLabel"
+                    android:layout_below="@id/tvTitleLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:background="@drawable/textborder"
+                    android:textSize="20sp"
+                    android:layout_margin="10sp"
+                    android:padding="10sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="@string/textview" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_below="@+id/tvDescLabel"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10sp"
+                    android:text="@string/button" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/mybanner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:background="@drawable/border_add"
+        />
+
+
+</RelativeLayout>

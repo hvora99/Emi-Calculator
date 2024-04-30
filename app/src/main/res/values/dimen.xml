@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="medium_padding">10dp</dimen>
+    <dimen name="medium_margin">10dp</dimen>
+    <dimen name="card_width">140dp</dimen>
+    <dimen name="card_height">170dp</dimen>
+    <dimen name="card_height_small">130dp</dimen>
+    <dimen name="card_width_large">320dp</dimen>
+    <dimen name="image_size">64dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+
+    <dimen name="activity_horizontal_padding">16dp</dimen>
+    <dimen name="activity_vertical_padding">20dp</dimen>
+    <dimen name="row_margin_bottom">10dp</dimen>
+    <dimen name="textview_padding">8dp</dimen>
+    <dimen name="elevation">2dp</dimen>
+    <dimen name="text_size">14dp</dimen>
+    <dimen name="button_margin_top">10dp</dimen>
+
+</resources>

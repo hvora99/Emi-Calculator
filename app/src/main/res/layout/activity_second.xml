@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#4a4069"
+    android:layout_height="match_parent"
+    tools:context=".second">
+
+
+
+    <com.facebook.ads.NativeAdLayout
+        android:id="@+id/nativebanner"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_add"
+        android:padding="2dp" />
+
+        <ScrollView
+            android:layout_below="@id/nativebanner"
+            android:layout_above="@id/mybanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/credirscore"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="#ffffff"
+                    app:contentPadding="5sp"
+                    app:cardElevation="4sp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_height="90sp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:background="@drawable/loncredit"
+                            android:layout_width="60sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:layout_height="60sp"
+                            android:layout_marginStart="20sp"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="#000000"
+                            android:text="How To Check Credit Score"
+                            android:textSize="20sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/loancalc"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="#ffffff"
+                    app:contentPadding="5sp"
+                    app:cardElevation="4sp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_height="90sp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:background="@drawable/loncalculator"
+                            android:layout_width="60sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:layout_height="60sp"
+                            android:layout_marginStart="20sp"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="#000000"
+                            android:text="Loan Calculator"
+                            android:textSize="20sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mortgage"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="#ffffff"
+                    app:contentPadding="5sp"
+                    app:cardElevation="4sp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_height="90sp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:background="@drawable/mortgage"
+                            android:layout_width="60sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:layout_height="60sp"
+                            android:layout_marginStart="20sp"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="#000000"
+                            android:text="mortgage Calculation"
+                            android:textSize="20sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/mybanner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:background="@drawable/border_add"
+        />
+
+</RelativeLayout>

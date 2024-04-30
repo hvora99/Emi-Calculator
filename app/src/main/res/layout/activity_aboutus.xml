@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4069"
+    tools:context=".Aboutus">
+
+
+    <com.facebook.ads.NativeAdLayout
+        android:id="@+id/nativebanner"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_add"
+        android:padding="2dp" />
+
+
+
+    <ScrollView
+        android:layout_below="@id/nativebanner"
+        android:layout_above="@id/mybanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/ractangle"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+                <TextView
+                    android:text="About App"
+                    android:background="#ffff00"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:padding="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="@string/ABT"
+                    android:textSize="22sp"/>
+                <TextView
+                    android:id="@+id/tv_dev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="@string/ABT_Info"
+                    android:textSize="22sp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/gotomain"
+                    app:cardBackgroundColor="#54517b"
+                    app:cardCornerRadius="5dp"
+                    android:elevation="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_margin="@dimen/medium_margin"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:background="#4a90e2"
+                            android:layout_marginTop="20sp"
+                            android:layout_marginStart="30sp"
+                            android:layout_marginEnd="40sp"/>
+                        <TextView
+                            android:text = "Check Credit Score Free Here"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="30dp"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText" />
+                        <TextView
+                            android:text = "Click Here to Know Credit Score"
+                            android:layout_marginStart="30dp"
+                            android:textSize="10sp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText,SmallSp" />
+
+                        <ImageView
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/more"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:contentDescription="TODO"
+                            tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/meter"
+                    android:layout_width="50dp"
+                    android:layout_height="50sp"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/mybanner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:background="@drawable/border_add"
+        />
+
+
+
+</RelativeLayout>
